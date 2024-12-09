@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio "El Sudor Contento"</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333333; /* Gris más claro */
+            color: #FFF; /* Texto blanco */
+        }
+
+        header {
+            background: #FFCC00; /* Amarillo brillante */
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #1e1e1e; /* Texto gris oscuro */
+            cursor: pointer;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #ffffff; /* Menú con fondo blanco */
+            text-align: center;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: #1e1e1e; /* Texto gris oscuro */
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .topnav a:hover {
+            background-color: #1e1e1e; /* Fondo gris oscuro al hacer hover */
+            color: #FFCC00; /* Texto amarillo */
+        }
+
+        .main {
+            padding: 0 20px;
+        }
+
+        .image-section {
+            background-color: #444444; /* Gris más claro */
+            margin: 20px auto; /* Espacio entre la barra de menú y la caja */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #FFCC00; /* Amarillo */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        .image-section .fakeimg {
+            background-color: #FFCC00; /* Amarillo */
+            height: 200px;
+            margin: 0 auto 10px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 200px;
+            color: #1e1e1e; /* Texto gris oscuro */
+            font-size: 20px;
+        }
+
+        .image-section p {
+            font-size: 18px;
+            color: #ddd; /* Texto gris claro */
+            margin: 10px 0 0;
+        }
+
+        .highlight-section {
+            background: #ffffff; /* Fondo blanco */
+            padding: 40px;
+            color: #FFCC00; /* Texto amarillo */
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .highlight-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-section div {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .highlight-box {
+            background: #d1d1d1; /* Fondo gris más oscuro */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            color: #1e1e1e; /* Texto gris oscuro */
+            max-width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid transparent; /* Borde transparente por defecto */
+            transition: border-color 0.3s ease; /* Solo transición de borde */
+        }
+
+        .highlight-box:hover {
+            border-color: #FFCC00; /* Borde amarillo minimalista */
+        }
+
+        .experience-section {
+            background: #ffffff; /* Fondo blanco */
+            color: #1e1e1e; /* Texto gris oscuro */
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .experience-section h2 {
+            font-size: 28px;
+            color: #FFCC00; /* Título en amarillo */
+        }
+
+        .experience-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .experience-box {
+            background: #444444; /* Gris más claro */
+            border: 2px solid #FFCC00; /* Borde amarillo */
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-box img {
+            width: 100%; /* Imagen ocupará todo el cuadro */
+            height: 200px; /* Tamaño fijo de la imagen */
+            border-radius: 8px;
+            object-fit: cover; /* Para que la imagen se ajuste bien al cuadro */
+        }
+
+        .experience-box p {
+            margin-top: 10px;
+            color: #FFF; /* Texto blanco */
+            font-size: 16px;
+        }
+
+        .signup-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FFCC00; /* Amarillo */
+            color: #1e1e1e; /* Texto gris oscuro */
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .signup-button:hover {
+            background: #1e1e1e; /* Fondo gris oscuro al hacer hover */
+            color: #FFCC00; /* Texto amarillo */
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #1e1e1e; /* Fondo gris más oscuro */
+            color: #FFCC00; /* Texto amarillo */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 onclick="location.href='Gimnasio El Sudor Contento.html'">Gimnasio "El Sudor Contento"</h1>
+        <p>¡Transforma tu vida con nosotros!</p>
+    </header>
+
+    <div class="topnav">
+        <a href="./clases_grupales.html">Clases Grupales</a>
+        <a href="./entrenadores_personales.html">Entrenadores Personales</a>
+        <a href="./membresias.html">Membresías</a>
+        <a href="./contacto.html">Contacto</a>
+    </div>
+
+    <div class="main">
+        <div class="image-section" style="width: 100%; margin: 20px auto; background-color: #444444; text-align: center; border-radius: 15px; padding: 10px; box-sizing: border-box;">
+              <img src="../IMG/Captura de pantalla 2024-11-30 195720.PNG" alt="Imagen del Gimnasio" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+            <p>Conoce nuestro gimnasio equipado con máquinas de calidad y áreas especializadas para cada tipo de entrenamiento.</p>
+        </div>
+
+        <div class="highlight-section">
+            <h2>¿Por qué elegirnos?</h2>
+            <div>
+                <div class="highlight-box">
+                    <h3>Atención Personalizada</h3>
+                    <p>Nuestro equipo te acompaña en cada paso hacia tus objetivos.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Ambiente Inspirador</h3>
+                    <p>Un espacio diseñado para motivarte a superar tus límites.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Flexibilidad</h3>
+                    <p>Horarios adaptados a tu estilo de vida.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Comunidad Activa</h3>
+                    <p>Únete a una red de personas comprometidas con su bienestar.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-section">
+            <h2>Vive la experiencia "El Sudor Contento"</h2>
+            <div class="experience-boxes">
+                <div class="experience-box">
+                    <img src="../IMG/DY5JCZRG4NGNRF55ZHUAFMHZWA.jpg" alt="Peso">
+                    <p>Área de Fuerza</p>
+                </div>
+                <div class="experience-box">
+                    <img src="../IMG/indoor-gym.jpg" alt="Áreas Funcionales">
+                    <p>Áreas Funcionales</p>
+                </div>
+            </div>
+            <a href="membresias.html" class="signup-button">¡Ver Membresías!</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Gimnasio "El Sudor Contento" - Todos los derechos reservados.</p>
+    </div>
+</body>
+
+</html>

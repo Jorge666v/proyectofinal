@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333333; /* Fondo gris oscuro */
+            color: #FFF; /* Texto blanco */
+        }
+
+        header {
+            background: #FFCC00; /* Amarillo brillante */
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #1e1e1e; /* Texto gris oscuro */
+            cursor: pointer;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #ffffff; /* Menú con fondo blanco */
+            text-align: center;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: #1e1e1e; /* Texto gris oscuro */
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .topnav a:hover {
+            background-color: #1e1e1e; /* Fondo gris oscuro al hacer hover */
+            color: #FFCC00; /* Texto amarillo */
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #FFCC00; /* Título en amarillo */
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #ddd; /* Texto gris claro */
+            margin-bottom: 40px;
+        }
+
+        .form-container {
+            background: #444; /* Fondo gris oscuro */
+            color: #FFF; /* Texto blanco */
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-container input:focus,
+        .form-container textarea:focus,
+        .form-container input:hover,
+        .form-container textarea:hover {
+            border-color: #FFCC00; /* Contorno amarillo al pasar el cursor o enfocar */
+            outline: none;
+        }
+
+        .form-container button {
+            background: #FFCC00; /* Fondo amarillo */
+            color: #1e1e1e; /* Texto gris oscuro */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background: #e6b800; /* Fondo amarillo más oscuro al hacer hover */
+        }
+
+        /* Parte blanca al final de la página */
+        .cta-section {
+            background: #FFFFFF; /* Fondo blanco */
+            padding: 40px 20px;
+            text-align: center;
+            color: #1e1e1e; /* Texto gris oscuro */
+            margin-top: 60px;
+        }
+
+        .cta-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #000; /* Título en negro */
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #FFCC00;
+            color: #1e1e1e;
+            font-size: 20px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #000000; /* Fondo negro */
+            color: #FFCC00; /* Texto amarillo */             /* ambas lineas de codigo hacen que el boton cambie a fondo negro y letras amarillas al pasar el cursor. */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 onclick="location.href='Gimnasio El Sudor Contento.html'">Gimnasio "El Sudor Contento"</h1>
+        <p>¡Transforma tu vida con nosotros!</p>
+    </header>
+
+    <div class="topnav">
+        <a href="clases_grupales.html">Clases Grupales</a>
+        <a href="entrenadores_personales.html">Entrenadores Personales</a>
+        <a href="membresias.html">Membresías</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="content">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna duda o pregunta? ¡Estamos aquí para ayudarte! No dudes en enviarnos un mensaje, nos contactaremos contigo a la brevedad.</p>
+
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+             <p>
+        <a href="https://maps.app.goo.gl/RbJjzwmygHUxmoqj8" target="_blank" style="color: #FFCC00; text-decoration: none;">Ubíquenos en Google Maps</a>
+    </p>
+    </div>
+
+    <div class="cta-section">
+        <h2>¡Contáctanos ahora!</h2>
+        <p>Si tienes alguna consulta sobre nuestros servicios, no dudes en comunicarte. Estamos para ayudarte a alcanzar tus metas.</p>
+        <a href="membresias.html" class="cta-button">¡Ver Membresías!</a>
+    </div>
+</body>
+
+</html>
